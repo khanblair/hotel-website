@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Haven | Premium Hotel Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-hotel"></i>
+                    <span>Luxe Haven</span>
+                </a>
+                <button class="mobile-menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-btn" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1920&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1920&q=80')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="subtitle">Welcome to Luxury</span>
+            <h1 class="hero-title">
+                <span class="typing-container">
+                    <span class="typing-phrase active" data-phrase="Experience Timeless">Experience Timeless</span>
+                    <span class="typing-phrase" data-phrase="Elegance Awaits">Elegance Awaits</span>
+                    <span class="typing-phrase" data-phrase="Your Dream Escape">Your Dream Escape</span>
+                    <span class="typing-cursor">|</span>
+                </span>
+            </h1>
+            <p class="hero-subtitle">Discover a sanctuary of refined comfort where every moment becomes extraordinary. Your journey to exceptional hospitality begins here.</p>
+            <div class="hero-buttons">
+                <a href="rooms.html" class="btn btn-primary">Explore Rooms</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Booking Bar -->
+    <section class="booking-bar">
+        <div class="booking-container">
+            <div class="booking-item">
+                <label>Check In</label>
+                <input type="date" id="checkin">
+            </div>
+            <div class="booking-item">
+                <label>Check Out</label>
+                <input type="date" id="checkout">
+            </div>
+            <div class="booking-item">
+                <label>Guests</label>
+                <select>
+                    <option>1 Guest</option>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                </select>
+            </div>
+            <div class="booking-item">
+                <label>Room Type</label>
+                <select>
+                    <option>Standard Room</option>
+                    <option>Deluxe Suite</option>
+                    <option>Executive Suite</option>
+                    <option>Presidential Suite</option>
+                </select>
+            </div>
+            <button class="btn btn-book">Check Availability</button>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="section about-preview">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80" alt="Hotel Lobby" class="img-large">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=400&q=80" alt="Hotel Pool" class="img-small">
+                </div>
+                <div class="about-content">
+                    <span class="section-label">Our Story</span>
+                    <h2>A Legacy of<br>Exceptional Hospitality</h2>
+                    <p>Since 1925, Luxe Haven has been the epitome of luxury accommodation. Nestled in the heart of the city, our historic hotel blends timeless elegance with modern sophistication.</p>
+                    <p>Every detail has been thoughtfully curated to provide an unforgettable experience, from our world-class dining to our personalized concierge services.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">98</span>
+                            <span class="stat-label">Years of Excellence</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">Happy Guests</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label">Awards Won</span>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Preview -->
+    <section class="section rooms-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Accommodations</span>
+                <h2>Luxurious Rooms & Suites</h2>
+                <p>Each room is a masterpiece of design, featuring premium amenities and breathtaking views.</p>
+            </div>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80" alt="Standard Room">
+                        <span class="room-price">$199/night</span>
+                    </div>
+                    <div class="room-info">
+                        <h3>Standard Room</h3>
+                        <p>Perfect for solo travelers or couples seeking comfort and style.</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> King Bed</span>
+                            <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                            <span><i class="fas fa-expand"></i> 35m²</span>
+                        </div>
+                        <a href="rooms.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="room-card featured">
+                    <div class="badge">Most Popular</div>
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80" alt="Deluxe Suite">
+                        <span class="room-price">$349/night</span>
+                    </div>
+                    <div class="room-info">
+                        <h3>Deluxe Suite</h3>
+                        <p>Spacious elegance with separate living area and premium amenities.</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> King Bed</span>
+                            <span><i class="fas fa-bath"></i> Spa Bath</span>
+                            <span><i class="fas fa-expand"></i> 55m²</span>
+                        </div>
+                        <a href="rooms.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Executive Suite">
+                        <span class="room-price">$499/night</span>
+                    </div>
+                    <div class="room-info">
+                        <h3>Executive Suite</h3>
+                        <p>The ultimate in luxury with panoramic views and butler service.</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> Emperor Bed</span>
+                            <span><i class="fas fa-concierge-bell"></i> Butler</span>
+                            <span><i class="fas fa-expand"></i> 85m²</span>
+                        </div>
+                        <a href="rooms.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Amenities</span>
+                <h2>World-Class Services</h2>
+                <p>Indulge in our exceptional facilities designed for your ultimate comfort.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Luxury Spa</h3>
+                    <p>Rejuvenate with our signature treatments and therapies in a tranquil setting.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Gourmet Dining</h3>
+                    <p>Savor exquisite cuisine from our award-winning chefs at three restaurants.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Infinity Pool</h3>
+                    <p>Relax in our temperature-controlled rooftop pool with stunning city views.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Fitness Center</h3>
+                    <p>Stay fit with state-of-the-art equipment and personal training sessions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Rooftop Bar</h3>
+                    <p>Enjoy handcrafted cocktails and live music under the stars every evening.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Valet Parking</h3>
+                    <p>Complimentary valet service and 24/7 transportation arrangements available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Testimonials</span>
+                <h2>What Our Guests Say</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"An absolutely magical experience! The attention to detail, the impeccable service, and the stunning ambiance made our anniversary celebration truly unforgettable."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sarah Mitchell">
+                        <div>
+                            <h4>Sarah Mitchell</h4>
+                            <span>New York, USA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The Presidential Suite exceeded all expectations. The panoramic views, the private jacuzzi, and the butler service made us feel like royalty. Can't wait to return!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="James Chen">
+                        <div>
+                            <h4>James Chen</h4>
+                            <span>London, UK</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"From the moment we arrived, we were treated like family. The spa treatments were divine, and the restaurants offered incredible dining experiences. Pure perfection!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Emma Rodriguez">
+                        <div>
+                            <h4>Emma Rodriguez</h4>
+                            <span>Madrid, Spain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="cta-bg" style="background-image: url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1920&q=80')"></div>
+        <div class="cta-overlay"></div>
+        <div class="container cta-content">
+            <h2>Ready for an Unforgettable Experience?</h2>
+            <p>Book your stay today and discover why Luxe Haven is the preferred choice for discerning travelers worldwide.</p>
+            <div class="cta-buttons">
+                <a href="rooms.html" class="btn btn-primary">Book Now</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-hotel"></i>
+                        <span>Luxe Haven</span>
+                    </a>
+                    <p>Experience the art of hospitality at its finest. Where luxury meets tradition.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Spa & Wellness</a></li>
+                        <li><a href="#">Fine Dining</a></li>
+                        <li><a href="#">Events & Weddings</a></li>
+                        <li><a href="#">Airport Transfer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Downtown</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@luxehaven.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxe Haven. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

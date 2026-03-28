@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Luxe Haven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-hotel"></i>
+                    <span>Luxe Haven</span>
+                </a>
+                <button class="mobile-menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-btn" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&q=80')"></div>
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <span class="section-label">Get in Touch</span>
+            <h1>Contact Us</h1>
+            <p>We're here to make your experience extraordinary. Reach out to us for reservations, inquiries, or special requests.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="section contact-info">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                    <p>123 Luxury Avenue<br>Downtown District<br>New York, NY 10001</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Phone Number</h3>
+                    <p>Reservations:<br>+1 (555) 123-4567<br><br>Concierge:<br>+1 (555) 123-4568</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Address</h3>
+                    <p>General Inquiries:<br>info@luxehaven.com<br><br>Reservations:<br>reservations@luxehaven.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Operating Hours</h3>
+                    <p>Front Desk: 24/7<br>Reservations: 24/7<br>Concierge: Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section contact-form-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <span class="section-label">Send a Message</span>
+                        <h2>We'd Love to Hear From You</h2>
+                        <p>Whether you have a question about our rooms, services, or anything else, our team is ready to assist you.</p>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="reservation">Room Reservation</option>
+                                <option value="inquiry">General Inquiry</option>
+                                <option value="event">Event/Wedding Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkinDate">Preferred Check-in Date</label>
+                            <input type="date" id="checkinDate" name="checkinDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="How can we assist you?"></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for exclusive offers
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="form-message" id="formMessage">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Thank you for your message! We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+                <div class="contact-sidebar">
+                    <div class="sidebar-map">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>123 Luxury Avenue, Downtown<br>New York, NY 10001</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline">Open in Maps</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-cta">
+                        <h3>Prefer to Call?</h3>
+                        <p>Our reservations team is available 24/7 to assist you with bookings and inquiries.</p>
+                        <a href="tel:+15551234567" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            +1 (555) 123-4567
+                        </a>
+                    </div>
+                    <div class="sidebar-social">
+                        <h3>Connect With Us</h3>
+                        <p>Follow us on social media for the latest updates, offers, and a glimpse into the Luxe Haven experience.</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="section quick-actions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">How Can We Help?</span>
+                <h2>Quick Actions</h2>
+            </div>
+            <div class="actions-grid">
+                <a href="#" class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Book a Room</h3>
+                    <p>Make a reservation</p>
+                    <i class="fas fa-arrow-right action-arrow"></i>
+                </a>
+                <a href="#" class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Spa Booking</h3>
+                    <p>Schedule treatments</p>
+                    <i class="fas fa-arrow-right action-arrow"></i>
+                </a>
+                <a href="#" class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Restaurant</h3>
+                    <p>Reserve a table</p>
+                    <i class="fas fa-arrow-right action-arrow"></i>
+                </a>
+                <a href="#" class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Events</h3>
+                    <p>Plan your event</p>
+                    <i class="fas fa-arrow-right action-arrow"></i>
+                </a>
+                <a href="#" class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Transportation</h3>
+                    <p>Airport transfer</p>
+                    <i class="fas fa-arrow-right action-arrow"></i>
+                </a>
+                <a href="#" class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Concierge</h3>
+                    <p>Special requests</p>
+                    <i class="fas fa-arrow-right action-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Common Questions</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the check-in and check-out time?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Check-in time is 3:00 PM and check-out time is 12:00 PM. Early check-in and late check-out can be arranged upon request, subject to availability.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is breakfast included in the room rate?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Breakfast is included in our Suite categories and above. Standard room guests can add breakfast at our restaurant for $45 per person per day.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer airport shuttle service?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer 24/7 airport transfer services. Luxury sedans are available for $95 each way, and our Rolls-Royce service is available for $250 each way.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your cancellation policy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Standard reservations can be cancelled up to 48 hours before arrival for a full refund. Special rates and packages may have different policies.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are pets allowed at the hotel?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're happy to welcome well-behaved pets under 25 lbs. Pet-friendly rooms are available with a one-time cleaning fee of $150. Service animals are always welcome.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there WiFi available?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Complimentary high-speed WiFi is available throughout the hotel, including all guest rooms, public areas, and meeting spaces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-hotel"></i>
+                        <span>Luxe Haven</span>
+                    </a>
+                    <p>Experience the art of hospitality at its finest. Where luxury meets tradition.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Spa & Wellness</a></li>
+                        <li><a href="#">Fine Dining</a></li>
+                        <li><a href="#">Events & Weddings</a></li>
+                        <li><a href="#">Airport Transfer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Downtown</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@luxehaven.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxe Haven. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
